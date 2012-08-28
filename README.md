@@ -18,8 +18,8 @@ ScreenShots
 iPhone
 ---
 
-<p align="center"><img src="https://github.com//wzbozon/DKKeyboardView/blob/master/iPhoneScreenshot.png?raw=true"></p>
+<p align="center"><img src="https://github.com/wzbozon/DKKeyboardView/blob/master/iPhoneScreenshot.png?raw=true"></p>
 iPad
 ---
 
-<p align="center"><img src="https://github.com//wzbozon/DKKeyboardView/blob/master/iPadScreenshot.png?raw=true"></p>
+<p align="center"><img src="https://github.com/wzbozon/DKKeyboardView/blob/master/iPadScreenshot.png?raw=true"></p>
