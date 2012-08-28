@@ -17,8 +17,9 @@ ScreenShots
 ===
 iPhone
 ---
-![iPhone screenshot](/wzbozon/DKKeyboardView/blob/master/iPhoneScreenshot.png)
+
+<p align="center"><img src="https://github.com//wzbozon/DKKeyboardView/blob/master/iPhoneScreenshot.png?raw=true"></p>
 iPad
 ---
 
-![iPad screenshot](/wzbozon/DKKeyboardView/blob/master/iPadScreenshot.png)
+<p align="center"><img src="https://github.com//wzbozon/DKKeyboardView/blob/master/iPadScreenshot.png?raw=true"></p>
