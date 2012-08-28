@@ -14,8 +14,7 @@
 		468A228015ECC680008F04B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A227F15ECC680008F04B0 /* main.m */; };
 		468A228415ECC680008F04B0 /* DKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A228315ECC680008F04B0 /* DKAppDelegate.m */; };
 		468A228715ECC680008F04B0 /* DKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A228615ECC680008F04B0 /* DKViewController.m */; };
-		468A228A15ECC680008F04B0 /* DKViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 468A228815ECC680008F04B0 /* DKViewController_iPhone.xib */; };
-		468A228D15ECC680008F04B0 /* DKViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 468A228B15ECC680008F04B0 /* DKViewController_iPad.xib */; };
+		468A228A15ECC680008F04B0 /* DKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 468A228815ECC680008F04B0 /* DKViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +30,7 @@
 		468A228315ECC680008F04B0 /* DKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKAppDelegate.m; sourceTree = "<group>"; };
 		468A228515ECC680008F04B0 /* DKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKViewController.h; sourceTree = "<group>"; };
 		468A228615ECC680008F04B0 /* DKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKViewController.m; sourceTree = "<group>"; };
-		468A228915ECC680008F04B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DKViewController_iPhone.xib; sourceTree = "<group>"; };
-		468A228C15ECC680008F04B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DKViewController_iPad.xib; sourceTree = "<group>"; };
+		468A228915ECC680008F04B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DKViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +81,7 @@
 				468A228315ECC680008F04B0 /* DKAppDelegate.m */,
 				468A228515ECC680008F04B0 /* DKViewController.h */,
 				468A228615ECC680008F04B0 /* DKViewController.m */,
-				468A228815ECC680008F04B0 /* DKViewController_iPhone.xib */,
-				468A228B15ECC680008F04B0 /* DKViewController_iPad.xib */,
+				468A228815ECC680008F04B0 /* DKViewController.xib */,
 				468A227A15ECC680008F04B0 /* Supporting Files */,
 			);
 			path = DKKeyboardView;
@@ -154,8 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				468A227E15ECC680008F04B0 /* InfoPlist.strings in Resources */,
-				468A228A15ECC680008F04B0 /* DKViewController_iPhone.xib in Resources */,
-				468A228D15ECC680008F04B0 /* DKViewController_iPad.xib in Resources */,
+				468A228A15ECC680008F04B0 /* DKViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,20 +179,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		468A228815ECC680008F04B0 /* DKViewController_iPhone.xib */ = {
+		468A228815ECC680008F04B0 /* DKViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				468A228915ECC680008F04B0 /* en */,
 			);
-			name = DKViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		468A228B15ECC680008F04B0 /* DKViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				468A228C15ECC680008F04B0 /* en */,
-			);
-			name = DKViewController_iPad.xib;
+			name = DKViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

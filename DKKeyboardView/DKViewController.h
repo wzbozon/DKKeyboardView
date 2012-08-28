@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DKViewController : UIViewController
+@interface DKViewController : UIViewController <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *textField1;
+@property (weak, nonatomic) IBOutlet UITextField *textField2;
+@property (weak, nonatomic) IBOutlet UITextField *textField3;
+@property (weak, nonatomic) IBOutlet UITextField *textField4;
+
+@property (nonatomic, strong) NSMutableDictionary *textFields;
 
 @end
