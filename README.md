@@ -17,8 +17,8 @@ ScreenShots
 ===
 iPhone
 ---
-![iPhone screenshot](DKKeyboardView/iPhoneScreenshot.png)
+![iPhone screenshot](/DKKeyboardView/blob/master/iPhoneScreenshot.png)
 iPad
 ---
 
-![iPad screenshot](DKKeyboardView/iPadScreenshot.png)
+![iPad screenshot](/DKKeyboardView/blob/master/iPadScreenshot.png)
