@@ -35,6 +35,7 @@
 		92CAD3E125EEFCD50096D2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DKViewController.xib; sourceTree = "<group>"; };
 		92CAD3E325EF02140096D2FE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92CAD3E725EF023F0096D2FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		92CAD3EA25EF06960096D2FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		468A226415ECC680008F04B0 = {
 			isa = PBXGroup;
 			children = (
+				92CAD3EA25EF06960096D2FE /* README.md */,
 				468A227915ECC680008F04B0 /* DKKeyboardView */,
 				468A227215ECC680008F04B0 /* Frameworks */,
 				468A227015ECC680008F04B0 /* Products */,
