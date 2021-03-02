@@ -18,4 +18,4 @@ ScreenShots
 iPhone
 ---
 
-<p align="center"><img src="https://github.com/wzbozon/DKKeyboardView/blob/master/iPhoneScreenshot.png?raw=true"></p>
+<p align="center"><img src="https://github.com/wzbozon/DKKeyboardView/blob/master/iPhoneScreenshot.png?raw=true" alt="iPhoneScreenshot.png" width="200"/></p>
