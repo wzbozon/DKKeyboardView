@@ -53,7 +53,7 @@
     NSUInteger tag = aTextField.tag;
     
     UIToolbar *toolbar = [[UIToolbar alloc] init];
-    [toolbar setBarStyle:UIBarStyleBlackTranslucent];
+    [toolbar setBarStyle:UIBarStyleDefault];
     [toolbar sizeToFit];
     
     UIBarButtonItem *prevButton = [[UIBarButtonItem alloc] initWithTitle:LS(@"Previous") style:UIBarButtonItemStyleDone target:self action:@selector(previousClicked:)];

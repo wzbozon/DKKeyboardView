@@ -15,6 +15,8 @@
 		468A228415ECC680008F04B0 /* DKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A228315ECC680008F04B0 /* DKAppDelegate.m */; };
 		468A228715ECC680008F04B0 /* DKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A228615ECC680008F04B0 /* DKViewController.m */; };
 		468A228A15ECC680008F04B0 /* DKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 468A228815ECC680008F04B0 /* DKViewController.xib */; };
+		92CAD3E425EF02140096D2FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CAD3E325EF02140096D2FE /* LaunchScreen.storyboard */; };
+		92CAD3E825EF023F0096D2FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CAD3E725EF023F0096D2FE /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		468A228515ECC680008F04B0 /* DKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKViewController.h; sourceTree = "<group>"; };
 		468A228615ECC680008F04B0 /* DKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKViewController.m; sourceTree = "<group>"; };
 		92CAD3E125EEFCD50096D2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DKViewController.xib; sourceTree = "<group>"; };
+		92CAD3E325EF02140096D2FE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92CAD3E725EF023F0096D2FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				468A228515ECC680008F04B0 /* DKViewController.h */,
 				468A228615ECC680008F04B0 /* DKViewController.m */,
 				468A228815ECC680008F04B0 /* DKViewController.xib */,
+				92CAD3E325EF02140096D2FE /* LaunchScreen.storyboard */,
+				92CAD3E725EF023F0096D2FE /* Images.xcassets */,
 				468A227A15ECC680008F04B0 /* Supporting Files */,
 			);
 			path = DKKeyboardView;
@@ -151,6 +157,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CAD3E425EF02140096D2FE /* LaunchScreen.storyboard in Resources */,
+				92CAD3E825EF023F0096D2FE /* Images.xcassets in Resources */,
 				468A227E15ECC680008F04B0 /* InfoPlist.strings in Resources */,
 				468A228A15ECC680008F04B0 /* DKViewController.xib in Resources */,
 			);
@@ -291,6 +299,7 @@
 		468A229115ECC680008F04B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DKKeyboardView/DKKeyboardView-Prefix.pch";
 				INFOPLIST_FILE = "DKKeyboardView/DKKeyboardView-Info.plist";
@@ -303,6 +312,7 @@
 		468A229215ECC680008F04B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DKKeyboardView/DKKeyboardView-Prefix.pch";
 				INFOPLIST_FILE = "DKKeyboardView/DKKeyboardView-Info.plist";
