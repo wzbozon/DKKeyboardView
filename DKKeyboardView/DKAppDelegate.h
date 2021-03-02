@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class DKViewController;
-
 @interface DKAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) DKViewController *viewController;
 
 @end

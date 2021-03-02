@@ -6,20 +6,9 @@
 //  Copyright (c) 2012 Denis Kutlubaev. All rights reserved.
 //
 
-// quick creation of localized strings
-#define LS(string) NSLocalizedString(string, nil)
-
 #import "DKViewController.h"
 
-@interface DKViewController ()
-
-@end
-
 @implementation DKViewController
-@synthesize textField1;
-@synthesize textField2;
-@synthesize textField3;
-@synthesize textField4;
 
 #pragma - mark - View Lifecycle
 
@@ -48,18 +37,16 @@
 
 #pragma - mark - KeyboardView Methods
 
-- (void)addAccessoryViewToTextField:(UITextField*)aTextField
+- (UIToolbar *)createToolBarWithTag:(NSInteger)tag
 {
-    NSUInteger tag = aTextField.tag;
-    
     UIToolbar *toolbar = [[UIToolbar alloc] init];
     [toolbar setBarStyle:UIBarStyleDefault];
     [toolbar sizeToFit];
     
-    UIBarButtonItem *prevButton = [[UIBarButtonItem alloc] initWithTitle:LS(@"Previous") style:UIBarButtonItemStyleDone target:self action:@selector(previousClicked:)];
+    UIBarButtonItem *prevButton = [[UIBarButtonItem alloc] initWithTitle:@"Previous" style:UIBarButtonItemStyleDone target:self action:@selector(previousClicked:)];
     prevButton.tag = tag;
     
-    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithTitle:LS(@"Next") style:UIBarButtonItemStyleDone target:self action:@selector(nextClicked:)];
+    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStyleDone target:self action:@selector(nextClicked:)];
     nextButton.tag = tag;
     
     UIBarButtonItem *flexButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
@@ -71,7 +58,7 @@
     
     [toolbar setItems:itemsArray];
     
-    [aTextField setInputAccessoryView:toolbar];
+    return toolbar;
 }
 
 - (void)nextClicked:(id)sender
@@ -79,6 +66,7 @@
     UIBarButtonItem *barButtonItem = sender;
     NSInteger tag = barButtonItem.tag;
     NSInteger tagToActivate = tag + 1;
+    
     if (tagToActivate >= ([self.textFields count])) {
         return;
     }
@@ -86,6 +74,7 @@
         UITextField *textField = [self.textFields objectForKey:[NSString stringWithFormat:@"%ld", (long)tagToActivate]];
         [textField becomeFirstResponder];
     }
+    
     return;
 }
 
@@ -94,6 +83,7 @@
     UIBarButtonItem *barButtonItem = sender;
     NSInteger tag = barButtonItem.tag;
     NSInteger tagToActivate = tag - 1;
+    
     if (tagToActivate < 0) {
         return;
     }
@@ -101,6 +91,7 @@
         UITextField *textField = [self.textFields objectForKey:[NSString stringWithFormat:@"%ld", (long)tagToActivate]];
         [textField becomeFirstResponder];
     }
+    
     return;
 }
 
@@ -114,9 +105,10 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (void)initiateTextField:(UITextField*)textField
+- (void)initiateTextField:(UITextField *)textField
 {
-    [self addAccessoryViewToTextField:textField];
+    UIToolbar *toolBar = [self createToolBarWithTag:textField.tag];
+    [textField setInputAccessoryView:toolBar];
     [self.textFields addEntriesFromDictionary:[NSDictionary dictionaryWithObject:textField forKey:[NSString stringWithFormat:@"%ld", (long)textField.tag]]];
 }
 
