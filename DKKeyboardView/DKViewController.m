@@ -46,25 +46,6 @@
     [self initiateTextField:self.textField4];
 }
 
-- (void)viewDidUnload
-{
-    [self setTextField1:nil];
-    [self setTextField2:nil];
-    [self setTextField3:nil];
-    [self setTextField4:nil];
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
-}
-
 #pragma - mark - KeyboardView Methods
 
 - (void)addAccessoryViewToTextField:(UITextField*)aTextField
@@ -102,7 +83,7 @@
         return;
     }
     else {
-        UITextField *textField = [self.textFields objectForKey:[NSString stringWithFormat:@"%d", tagToActivate]];
+        UITextField *textField = [self.textFields objectForKey:[NSString stringWithFormat:@"%ld", (long)tagToActivate]];
         [textField becomeFirstResponder];
     }
     return;
@@ -117,7 +98,7 @@
         return;
     }
     else {
-        UITextField *textField = [self.textFields objectForKey:[NSString stringWithFormat:@"%d", tagToActivate]];
+        UITextField *textField = [self.textFields objectForKey:[NSString stringWithFormat:@"%ld", (long)tagToActivate]];
         [textField becomeFirstResponder];
     }
     return;
@@ -127,14 +108,16 @@
 {
     [self.view endEditing:YES];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Done clicked" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
-    [alert show];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Done clicked" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:cancel];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)initiateTextField:(UITextField*)textField
 {
     [self addAccessoryViewToTextField:textField];
-    [self.textFields addEntriesFromDictionary:[NSDictionary dictionaryWithObject:textField forKey:[NSString stringWithFormat:@"%d", textField.tag]]];
+    [self.textFields addEntriesFromDictionary:[NSDictionary dictionaryWithObject:textField forKey:[NSString stringWithFormat:@"%ld", (long)textField.tag]]];
 }
 
 
